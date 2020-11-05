@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import { Router, Route, Switch } from "react-router-dom";
 import history from "../history";
 import MainPage from "./MainPage";
-import Teams from "./Teams";
+import Team from "./Team";
 import Gallery from "./Gallery";
-import Menu from "../subcomponents/Menu";
+import Menu from "./Menu";
 import Events from "./Events";
 import ContactUs from "./ContactUs";
 
@@ -17,7 +17,7 @@ class App extends Component {
             <Menu />
             <Switch>
               <Route path="/" exact component={MainPage} />
-              <Route path="/teams" exact component={Teams} />
+              <Route path="/team" exact component={Team} />
               <Route path="/gallery" exact component={Gallery} />
               <Route path="/events" exact component={Events} />
               <Route path="/contactus" exact component={ContactUs} />
