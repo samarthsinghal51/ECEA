@@ -12,12 +12,12 @@ const Member = ({
   return (
     <div className="ui raised centered card">
       <div className="image">
-        <img src={require(`../assets/team/${photo}`)} />
+        <img src={require(`../assets/team/${photo}`)} alt="special" />
       </div>
       <div className="content">
         <div className="header">{name}</div>
         <div className="meta">
-          <a>Friends</a>
+          <div>Friends</div>
         </div>
         <div className="description">{description}</div>
       </div>

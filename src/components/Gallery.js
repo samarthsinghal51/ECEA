@@ -4,7 +4,7 @@ import { useState } from "react";
 import ImageCard from "../subcomponents/ImageCard";
 
 const Gallery = () => {
-  const [images, setImages] = useState([
+  const [images] = useState([
     "apl.jpg",
     "apprentice ship.jpg",
     "bhoomerang1.jpg",

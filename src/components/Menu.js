@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { Image } from "semantic-ui-react";
 import logo from "../assets/images/ecea1.png";
 import "../css/menu.css";
-import history from "../history";
 
 class Menu extends Component {
   state = { tab: "ecea" };

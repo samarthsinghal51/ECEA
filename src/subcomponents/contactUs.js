@@ -9,6 +9,7 @@ class Location extends Component {
           <div className="one wide column"></div>
           <div className="six wide column">
             <iframe
+              title="location"
               width="500"
               height="450"
               frameBorder="0"

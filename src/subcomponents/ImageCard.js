@@ -20,7 +20,7 @@ class ImageCard extends React.Component {
       <div style={{ gridRowEnd: `span ${this.state.spans}` }}>
         <img
           ref={this.imageRef}
-          alt="photo"
+          alt="gallery"
           src={require(`../assets/events/${this.props.image}`)}
         />
       </div>
