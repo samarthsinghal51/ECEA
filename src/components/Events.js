@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import EventItem from "../subcomponents/eventItem";
+import EventItem from "../subcomponents/EventItem";
 
 class Events extends Component {
   render() {

@@ -10,10 +10,10 @@ class Menu extends Component {
   renderActive = (tab) => {
     return this.state.tab === tab ? "active" : "";
   };
-  componentDidMount() {
-    const routeName = history.location.pathname.substring(1);
-    this.setState({ tab: { routeName } });
-  }
+  // componentDidMount() {
+  //   const routeName = history.location.pathname.substring(1);
+  //   this.setState({ tab: { routeName } });
+  // }
   render() {
     console.log(this.state.tab);
     return (

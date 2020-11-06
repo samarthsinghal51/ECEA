@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import { CarouselProvider, Slider, Slide, Image } from "pure-react-carousel";
 import { Segment } from "semantic-ui-react";
 import "pure-react-carousel/dist/react-carousel.es.css";
-import Events from "../subcomponents/mainPageEvents";
-import Location from "../subcomponents/contactUs";
+import Events from "../subcomponents/MainPageEvents";
+import Location from "../subcomponents/ContactUs";
 
 class MainPage extends Component {
   render() {

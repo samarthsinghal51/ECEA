@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Member from "../subcomponents/member";
+import Member from "../subcomponents/Member";
 
 class Team extends Component {
   render() {
