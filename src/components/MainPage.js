@@ -16,6 +16,8 @@ class MainPage extends Component {
             naturalSlideWidth={50}
             naturalSlideHeight={50}
             totalSlides={3}
+            naturalSlideHeight={55}
+            naturalSlideWidth={100}
           >
             <Slider>
               <Slide tag="a" index={0}>
