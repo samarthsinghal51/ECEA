@@ -1,3 +1,4 @@
+import "../css/ImageCard.css";
 import React from "react";
 
 class ImageCard extends React.Component {
@@ -11,7 +12,7 @@ class ImageCard extends React.Component {
   }
   setSpans = () => {
     const height = this.imageRef.current.clientHeight;
-    const spans = Math.ceil(height / 9.5);
+    const spans = Math.ceil(height / 10);
     this.setState({ spans });
   };
   render() {
@@ -21,8 +22,9 @@ class ImageCard extends React.Component {
         <img
           ref={this.imageRef}
           alt="gallery"
-          src={require(`../assets/events/${this.props.image}`)}
+          src={`https://drive.google.com/uc?id=${this.props.image}`}
         />
+        {/* <iframe ref={this.imageRef} src={this.props.image}></iframe> */}
       </div>
     );
   }

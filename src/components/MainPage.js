@@ -24,10 +24,10 @@ class MainPage extends Component {
                 <Image src={require("../assets/images/nitw.jpg")} />
               </Slide>
               <Slide tag="a" index={1}>
-                <Image src={require("../assets/images/eceadept.jpg")} />
+                <Image src={require("../assets/images/16th-convocation.jpg")} />
               </Slide>
               <Slide tag="a" index={2}>
-                <Image src={require("../assets/images/diamond.png")} />
+                <Image src="https://qph.fs.quoracdn.net/main-qimg-febd4d55ce0e7f269a5a3106db599237.webp" />
               </Slide>
             </Slider>
           </CarouselProvider>
