@@ -16,7 +16,7 @@ class MainPage extends Component {
             naturalSlideWidth={50}
             naturalSlideHeight={50}
             totalSlides={3}
-            naturalSlideHeight={55}
+            naturalSlideHeight={60}
             naturalSlideWidth={100}
           >
             <Slider>
@@ -24,7 +24,7 @@ class MainPage extends Component {
                 <Image src={require("../assets/images/nitw.jpg")} />
               </Slide>
               <Slide tag="a" index={1}>
-                <Image src={require("../assets/images/16th-convocation.jpg")} />
+                <Image src="https://drive.google.com/uc?id=1uvjUpQyxLvK0lRgKianKmJ2wInyYmJrj" />
               </Slide>
               <Slide tag="a" index={2}>
                 <Image src="https://qph.fs.quoracdn.net/main-qimg-febd4d55ce0e7f269a5a3106db599237.webp" />
