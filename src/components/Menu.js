@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { Image } from "semantic-ui-react";
-import logo from "../assets/images/ecea1.png";
 import "../css/menu.css";
 
 class Menu extends Component {
@@ -16,16 +15,21 @@ class Menu extends Component {
   render() {
     console.log(this.state.tab);
     return (
-      <div className="ui pointing menu" style={{ marginTop: "10px" }}>
-        <Link
-          to="/"
-          className={`${this.renderActive("ecea")} item`}
-          onClick={() => this.setState({ tab: "ecea" })}
-        >
-          <Image src={logo} className="logo" />
-        </Link>
+      <div className="ui menu" style={{ marginTop: "10px" }}>
+        <div className="ui color1">
+          <Link
+            to="/"
+            className={`${this.renderActive("ecea")} item`}
+            onClick={() => this.setState({ tab: "ecea" })}
+          >
+            <Image
+              src={require("../assets/images/ecea1.png")}
+              className="logo"
+            />
+          </Link>
+        </div>
 
-        <div className="right menu">
+        <div className="ui pointing right menu">
           <Link
             to="/team"
             className={`${this.renderActive("team")} item`}
