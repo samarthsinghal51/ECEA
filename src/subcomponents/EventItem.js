@@ -5,7 +5,7 @@ const EventItem = ({ photo, name }) => {
     <div className="column">
       <div className="ui fluid card">
         <div className="image">
-          <img alt="event" src={require(`../assets/events/${photo}`)} />
+          <img alt="event" src={`https://drive.google.com/uc?id=${photo}`} />
         </div>
         <div className="center aligned content">
           <div className="header">{name}</div>
