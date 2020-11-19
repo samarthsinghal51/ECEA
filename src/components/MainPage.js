@@ -27,7 +27,7 @@ class MainPage extends Component {
                 <Image src="https://drive.google.com/uc?id=1uvjUpQyxLvK0lRgKianKmJ2wInyYmJrj" />
               </Slide>
               <Slide tag="a" index={2}>
-                <Image src="https://qph.fs.quoracdn.net/main-qimg-febd4d55ce0e7f269a5a3106db599237.webp" />
+                <Image src="https://drive.google.com/uc?id=19BRRzpnSxSZ1YlLL0LbhNUXn0h-HoXRn" />
               </Slide>
             </Slider>
           </CarouselProvider>
