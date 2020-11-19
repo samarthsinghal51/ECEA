@@ -28,7 +28,6 @@ const Member = ({
         )}
       </div>
       <div className="extra content">
-        <span className="right floated"></span>
         <span>
           {faculty != null && (
             <a href={`https://nitw.irins.org/profile/${faculty}`}>

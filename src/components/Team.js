@@ -16,7 +16,7 @@ const Team = () => {
       "1M3MtsN2CvKBwWK-Q-2lxvk4UHi6yAzE4",
       "Manthan Tolia",
       "Poster Designer and Content Writer",
-      null,
+      "I am a software enthusiast with a love for game and web development. I have been in ECEA since my first year and have helped a lot to make ECEA what it is today. I love managing and organising events which keeps me busy and away from boredom.",
       "manny5252",
       "manny5252",
       "manthan-tolia-8b8587194",
