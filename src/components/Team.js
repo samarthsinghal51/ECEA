@@ -179,6 +179,16 @@ const Team = () => {
       "lakshmi-pragna-kalavacharla-574b661a3",
       null,
     ],
+    [
+      "1ciDQsg5GFzggO0LJvSBd6Nd0P7kPqKCn",
+      "Prateek Saxena",
+      "Designer",
+      null,
+      "prateeks99",
+      null,
+      "prateeks99",
+      "prateeks99",
+    ],
   ]);
   const [Exec] = useState([
     [
