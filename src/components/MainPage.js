@@ -4,9 +4,16 @@ import { Segment } from "semantic-ui-react";
 import "pure-react-carousel/dist/react-carousel.es.css";
 import Events from "../subcomponents/MainPageEvents";
 import Location from "../subcomponents/ContactUs";
+import { Transition } from "semantic-ui-react";
 
 class MainPage extends Component {
+  state = { visible: true };
+
+  toggleVisibility = () =>
+    this.setState((prevState) => ({ visible: !prevState.visible }));
+
   render() {
+    const { visible } = this.state;
     return (
       <div>
         <Segment attached="bottom">
@@ -21,13 +28,19 @@ class MainPage extends Component {
           >
             <Slider>
               <Slide tag="a" index={0}>
-                <Image src={require("../assets/images/nitw.jpg")} />
+                <Transition visible={visible} animation="pulse" duration={500}>
+                  <Image src={require("../assets/images/nitw.jpg")} onMouseEnter={this.toggleVisibility}/>
+                </Transition>
               </Slide>
               <Slide tag="a" index={1}>
-                <Image src="https://drive.google.com/uc?id=1uvjUpQyxLvK0lRgKianKmJ2wInyYmJrj" />
+                <Transition visible={visible} animation="pulse" duration={500}>
+                  <Image src="https://drive.google.com/uc?id=1uvjUpQyxLvK0lRgKianKmJ2wInyYmJrj" onMouseEnter={this.toggleVisibility}/>
+                </Transition>
               </Slide>
               <Slide tag="a" index={2}>
-                <Image src="https://drive.google.com/uc?id=19BRRzpnSxSZ1YlLL0LbhNUXn0h-HoXRn" />
+                <Transition visible={visible} animation="pulse" duration={500}>
+                  <Image src="https://drive.google.com/uc?id=19BRRzpnSxSZ1YlLL0LbhNUXn0h-HoXRn" onMouseEnter={this.toggleVisibility}/>
+                </Transition>
               </Slide>
             </Slider>
           </CarouselProvider>

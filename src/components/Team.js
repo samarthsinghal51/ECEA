@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Member from "../subcomponents/Member";
 
 const Team = () => {
+  
   const [Profs] = useState([
     [
       "19n3S-XZ6Iq5VmuWQaPgbpp16St8mUA0l",
@@ -406,7 +407,6 @@ const Team = () => {
           <i className="user icon"></i>
           <div className="content">Faculty</div>
         </h2>
-
         <div className="ui link cards">{Faculty}</div>
       </div>
       <br />
@@ -426,7 +426,6 @@ const Team = () => {
           <i className="user icon"></i>
           <div className="content">Aditional Secretary</div>
         </h2>
-
         <div className="ui link cards">{Additional}</div>
       </div>
       <br />

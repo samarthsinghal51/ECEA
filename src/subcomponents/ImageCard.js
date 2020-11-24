@@ -1,7 +1,13 @@
 import "../css/ImageCard.css";
 import React from "react";
+import { Transition } from "semantic-ui-react";
 
 class ImageCard extends React.Component {
+  state = { visible: true };
+
+  toggleVisibility = () =>
+    this.setState((prevState) => ({ visible: !prevState.visible }));
+
   constructor(props) {
     super(props);
     this.imageRef = React.createRef();
@@ -17,16 +23,20 @@ class ImageCard extends React.Component {
     this.setState({ spans });
   };
   render() {
+    const { visible } = this.state;
     // const { description, urls } = this.props.image;
     return (
-      <div style={{ gridRowEnd: `span ${this.state.spans}` }}>
-        <img
-          ref={this.imageRef}
-          alt="gallery"
-          src={`https://drive.google.com/uc?id=${this.props.image}`}
-        />
-        {/* <iframe ref={this.imageRef} src={this.props.image}></iframe> */}
-      </div>
+      <Transition visible={visible} animation="pulse" duration={500}>
+        <div style={{ gridRowEnd: `span ${this.state.spans}` }}>
+          <img
+            ref={this.imageRef}
+            alt="gallery"
+            src={`https://drive.google.com/uc?id=${this.props.image}`}
+            onMouseEnter={this.toggleVisibility}
+          />
+          {/* <iframe ref={this.imageRef} src={this.props.image}></iframe> */}
+        </div>
+      </Transition>
     );
   }
 }
