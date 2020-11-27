@@ -33,7 +33,7 @@ const Gallery = () => {
     return <ImageCard key={image} image={image} />;
   });
   return (
-    <div>
+    <div style={{paddingTop:80}}>
       <div className="image-list">{photos}</div>
     </div>
   );

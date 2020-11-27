@@ -27,8 +27,7 @@ const Events = () => {
     return <EventItem photo={image[0]} name={image[1]} />;
   });
   return (
-    <div>
-      <br />
+    <div style={{ paddingTop: 90 }}>
       <div className="ui two column grid">{photos}</div>
     </div>
   );

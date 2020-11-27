@@ -7,6 +7,7 @@ import Gallery from "./Gallery";
 import Menu from "./Menu";
 import Events from "./Events";
 import ContactUs from "./ContactUs";
+import Footer from "./Footer";
 
 class App extends Component {
   render() {
@@ -15,6 +16,7 @@ class App extends Component {
         <Router history={history}>
           <div>
             <Menu />
+            
             <Switch>
               <Route path="/" exact component={MainPage} />
               <Route path="/team" exact component={Team} />
@@ -22,6 +24,7 @@ class App extends Component {
               <Route path="/events" exact component={Events} />
               <Route path="/contactus" exact component={ContactUs} />
             </Switch>
+            <Footer/>
           </div>
         </Router>
       </div>

@@ -397,7 +397,7 @@ const Team = () => {
     );
   });
   return (
-    <div>
+    <div style={{paddingTop:80}}>
       <h2 className="ui center aligned icon header">
         <i className="circular users icon"></i>
         Team
