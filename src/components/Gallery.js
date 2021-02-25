@@ -2,6 +2,7 @@ import "../css/gallery.css";
 import React from "react";
 import { useState } from "react";
 import ImageCard from "../subcomponents/ImageCard";
+import "../css/menu.css";
 
 const Gallery = () => {
   const [images] = useState([
@@ -33,7 +34,7 @@ const Gallery = () => {
     return <ImageCard key={image} image={image} />;
   });
   return (
-    <div style={{paddingTop:80}}>
+    <div className="mainpageStyle">
       <div className="image-list">{photos}</div>
     </div>
   );

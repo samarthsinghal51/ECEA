@@ -7,3 +7,23 @@
     background-color: #0e1f41;
     color: #0e1f41;
 }
+
+.menustyle {
+    width: 93%;
+}
+
+@media (min-width: 768px) {
+    .menustyle {
+        width: 78.3%;
+    }
+}
+
+.mainpageStyle {
+    padding-top: 268px;
+}
+
+@media (min-width: 768px) {
+    .mainpageStyle {
+        padding-top: 80px;
+    }
+}

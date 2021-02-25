@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Member from "../subcomponents/Member";
+import "../css/menu.css";
 
 const Team = () => {
-  
   const [Profs] = useState([
     [
       "19n3S-XZ6Iq5VmuWQaPgbpp16St8mUA0l",
@@ -397,7 +397,7 @@ const Team = () => {
     );
   });
   return (
-    <div style={{paddingTop:80}}>
+    <div className="mainpageStyle">
       <h2 className="ui center aligned icon header">
         <i className="circular users icon"></i>
         Team

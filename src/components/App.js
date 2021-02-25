@@ -8,6 +8,7 @@ import Menu from "./Menu";
 import Events from "./Events";
 import ContactUs from "./ContactUs";
 import Footer from "./Footer";
+import Alumni from "./Alumni";
 
 class App extends Component {
   render() {
@@ -23,6 +24,7 @@ class App extends Component {
               <Route path="/gallery" exact component={Gallery} />
               <Route path="/events" exact component={Events} />
               <Route path="/contactus" exact component={ContactUs} />
+              <Route path="/alumni" exact component={Alumni}/>
             </Switch>
             <Footer/>
           </div>

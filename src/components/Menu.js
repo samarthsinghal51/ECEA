@@ -15,50 +15,64 @@ class Menu extends Component {
   render() {
     console.log(this.state.tab);
     return (
-        <div className="ui menu" style={{ paddingTop:0, position: "fixed", zIndex: 100 ,width:1128}}>
-          <div className="ui color1">
-            <Link
-              to="/"
-              className={`${this.renderActive("ecea")} item`}
-              onClick={() => this.setState({ tab: "ecea" })}
-            >
-              <Image
-                src={require("../assets/images/ecea1.png")}
-                className="logo"
-              />
-            </Link>
-          </div>
-
-          <div className="ui pointing right menu">
-            <Link
-              to="/team"
-              className={`${this.renderActive("team")} item`}
-              onClick={() => this.setState({ tab: "team" })}
-            >
-              Team
-            </Link>
-            <Link
-              to="/gallery"
-              className={`${this.renderActive("gallery")} item`}
-              onClick={() => this.setState({ tab: "gallery" })}
-            >
-              Gallery
-            </Link>
-            <Link
-              to="/events"
-              className={`${this.renderActive("events")} item`}
-              onClick={() => this.setState({ tab: "events" })}
-            >
-              Events
-            </Link>
-            <div className="item">
-              <div className="ui transparent icon input">
-                <input type="text" placeholder="Search..." />
-                <i className="search link icon"></i>
-              </div>
-            </div>
-          </div>
+      <div
+        className="ui stackable menu menustyle"
+        style={{
+          paddingTop: 0,
+          position: "fixed",
+          zIndex: 100,
+        }}
+      >
+        <div className="ui color1">
+          <Link
+            to="/"
+            className={`${this.renderActive("ecea")} item`}
+            onClick={() => this.setState({ tab: "ecea" })}
+          >
+            <Image
+              src={require("../assets/images/ecea1.png")}
+              className="logo"
+            />
+          </Link>
         </div>
+
+        <div className="ui pointing right menu">
+          <Link
+            to="/team"
+            className={`${this.renderActive("team")} item`}
+            onClick={() => this.setState({ tab: "team" })}
+          >
+            Team
+          </Link>
+          <Link
+            to="/gallery"
+            className={`${this.renderActive("gallery")} item`}
+            onClick={() => this.setState({ tab: "gallery" })}
+          >
+            Gallery
+          </Link>
+          <Link
+            to="/events"
+            className={`${this.renderActive("events")} item`}
+            onClick={() => this.setState({ tab: "events" })}
+          >
+            Events
+          </Link>
+          <Link
+            to="/alumni"
+            className={`${this.renderActive("alumni")} item`}
+            onClick={() => this.setState({ tab: "alumni" })}
+          >
+            Alumni
+          </Link>
+          {/* <div className="item">
+            <div className="ui transparent icon input">
+              <input type="text" placeholder="Search..." />
+              <i className="search link icon"></i>
+            </div>
+          </div> */}
+        </div>
+      </div>
     );
   }
 }

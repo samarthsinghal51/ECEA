@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import EventItem from "../subcomponents/EventItem";
+import "../css/menu.css";
 
 const Events = () => {
   const [images] = useState([
@@ -27,7 +28,7 @@ const Events = () => {
     return <EventItem photo={image[0]} name={image[1]} />;
   });
   return (
-    <div style={{ paddingTop: 90 }}>
+    <div className="mainpageStyle">
       <div className="ui two column grid">{photos}</div>
     </div>
   );

@@ -6,11 +6,12 @@ import Events from "../subcomponents/MainPageEvents";
 import Location from "../subcomponents/ContactUs";
 import Cards from "./Cards";
 import AboutUs from "./AboutUs";
+import "../css/menu.css";
 
 class MainPage extends Component {
   render() {
     return (
-      <div style={{ paddingTop: 80 }}>
+      <div className="mainpageStyle">
         <Segment attached="bottom">
           <CarouselProvider
             isPlaying
@@ -39,7 +40,7 @@ class MainPage extends Component {
           content=" We concentrate on giving the students of NIT Warangal ample opportunities so that they can work on their knowledge, competencies and widen their field of excellence and grade. We work here for both learning new stuff and also for helping other students to enlarge their parameters of merit and knowledge by the organising a wide variety of events, workshops, lectures, competitions, online quizzes etc."
         />
         <Events />
-        <Cards />
+        {/* <Cards /> */}
         <AboutUs
           heading="Motto"
           content="Diligence, erudition and integrity are words and actions the ECE Association stands for.Right from conducting workshops and webinars, organizing quizzes and games adding the much needed fun to academic rigour, to devoting time to charity work, we strive to leave no stone unturned. Working for the college community has always been our prime and we always strive for the best of everyone."
